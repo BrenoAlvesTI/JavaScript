@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa JS</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            color: rgb(207, 207, 207);
+            font: 15pt Arial;
+        }
+        p {
+            color: rgb(0, 255, 170);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Este é meu primeiro programa JS</p>
+    <script>
+       var n1 = Number.parseInt(prompt('Digite um número')) // Number.parseInt converte o número para inteiro
+       var n2 = Number.parseFloat(prompt('Digite outro número')) // Number.parseFloat converte o número para real
+       var n3 = Number(prompt('Digite o último número')) // prompt retorna o valor string
+       var s = n1 + n2 + n3
+       alert(`A soma entre ${n1} e ${n2} e ${n3} é ${s}`) // escrever entre crases(``) permite formatar
+    </script>
+</body>
+</html>
