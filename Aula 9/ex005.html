@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            color: floralwhite;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> Em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <div name="kkk">Bem vindo</div>
+    <div class="kaka">Batata</div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0] // encontra a mensagem pela tag
+        var d = document.getElementById('msg') // encontra a mensagem pelo id
+        d.style.background = 'green'
+        d.innerHTML = 'Oi' // variável.innerHTML substitui o texto da váriavel
+        var f = document.getElementsByName('kkk')[0]
+        f.innerHTML = 'Hello'
+        var g = document.querySelector('div.kaka') // Use . para classes e # para id
+        g.style.background = 'purple'
+    </script>
+</body>
+</html>
