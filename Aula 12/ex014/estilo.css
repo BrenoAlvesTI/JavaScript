@@ -28,9 +28,13 @@ img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    padding: 20px;
 }
 
 div {
-    text-align: center;
     padding: 10px;
+}
+
+div#res {
+    text-align: center;
 }
