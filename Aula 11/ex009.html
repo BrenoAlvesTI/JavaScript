@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detran</title>
+    <style>
+        div#res {
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
     <h1>Sistema de multas</h1>
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h
     <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
     <script>
-        function verificar {
+        function verificar() {
             var vel = document.querySelector('input#txtvel')
             var vel = Number(vel.value)
-            var v = document.querySelector('input#verificar')
-            if (v <= 60) {
-                console.log('Dirija com segurança!')
+            var res = document.querySelector('div#res')
+            res.innerHTML =`<p>Sua velocidade é de <strong>${vel}km/h</strong></p>`
+            if (vel <= 60) {
+                res.innerHTML += `<p>Dirija em segurança!</p>`
             }
             else {
-                console.log('Você ultrapassou o limite permitido. Multado!')
-        }
+                res.innerHTML += `<P>Você foi <strong>MULTADO</strong> por excesso de velocidade.</p>`
+            }
     }
     </script>
 </body>
