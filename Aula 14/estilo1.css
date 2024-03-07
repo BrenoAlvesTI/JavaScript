@@ -32,8 +32,14 @@ select#tab {
 
 input#t {
     box-shadow: 5px 5px 10px black;
+    font-size: 15px;
 }
 
 input#txtn {
     box-shadow: 5px 5px 10px black;
+    font: normal 15pt arial;
+}
+
+p#txt {
+    font: normal 22pt Arial;
 }
