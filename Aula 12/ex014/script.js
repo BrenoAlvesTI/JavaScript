@@ -14,7 +14,7 @@ function verificar() {
         img.setAttribute('id', 'foto')
         if (fsex[0].checked) {
             genero = 'Homem'
-            if (idade >=0 && idade < 10) {
+            if (idade > 0 && idade < 10) {
                 //criança
                 img.setAttribute('src', 'Hbebe.jpg')
             } 
